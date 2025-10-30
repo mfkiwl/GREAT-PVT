@@ -117,6 +117,8 @@ namespace gnut
         _ifb4_init = false;
         _ifb5_init = false;
 
+        _auto_band = false;
+
     } // end constructor
 
     t_gsppflt::t_gsppflt(string mark, t_gsetbase *set, t_spdlog spdlog,string mode)
@@ -218,6 +220,8 @@ namespace gnut
         _ifb3_init = false;
         _ifb4_init = false;
         _ifb5_init = false;
+
+        _auto_band = false;
 
 		//freq_index and band_index 
 		_band_index[gnut::GPS] = dynamic_cast<t_gsetgnss *>(_set)->band_index(gnut::GPS);
